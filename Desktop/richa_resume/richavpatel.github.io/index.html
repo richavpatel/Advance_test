@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+    <style>
+        .body {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            padding: 25px;
+        }
+
+        .topnav {
+            background-color: purple !important;
+        }
+
+        .topnav a {
+            text-align: center;
+            color: white !important;
+            padding: 19px !important;
+            font-size: 18px !important;
+        }
+
+        .topnav a:hover {
+            color: aliceblue;
+        }
+
+        li.no1 {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        li.no1 {
+            display: inline;
+        }
+
+        ul {
+            list-style-type: none;
+            font-size: 23px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        #skill,
+        #projects,
+        #contacts {
+            background-color: white;
+            height: 100%;
+        }
+
+        #aboutme,
+        #education,
+        #work {
+            background: #e9ecef;
+            height: 90%;
+        }
+
+        #aboutme {
+            padding: 10%;
+            width: 100%;
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        #skill {
+            width: 100%;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        #education {
+            width: 100%;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        #projects {
+            width: 100%;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        #work {
+            width: 100%;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        #contacts {
+            width: 100%;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .richa {
+            font-size: 28px;
+            font-family: "Bree Serif", serif;
+            color: #222222;
+            text-transform: uppercase;
+            text-align: center;
+            border: 1px solid #222222;
+            display: inline-block;
+            line-height: 58px;
+            padding: 0px 40px;
+            margin-bottom: 30px;
+
+        }
+
+        .button {
+            background-color: purple;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            text-decoration: none;
+
+            font-size: 20px;
+            margin: 4px 4px;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: purple;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+
+            font-size: 20px;
+            margin: 4px 4px;
+            cursor: pointer;
+
+        }
+
+        .button2 {
+            border-radius: 50%;
+        }
+
+        .button1 {
+            border-radius: 50%;
+        }
+
+        .fa {
+            padding: 15px;
+            margin-right: 15px;
+
+            width: 45px;
+            text-align: center;
+            text-decoration: none;
+
+            border-radius: 50%;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-yahoo {
+            background: #430297;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .footer {
+            background-color: purple;
+            height: 90px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+
+        }
+
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .aboutme,
+            .skill,
+            .education,
+            .projects,
+            .work,
+            .contacts {
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        #aboutme{
+            background: url(./bg1.jpg)no-repeat fixed;
+            color: white;
+            height: 600px;
+            padding-top: 10%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light topnav">
+            <a class="navbar-brand" href="#">Richa Patel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">WORK HISTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section id="aboutme">
+        <div class="animated">
+            <h1>Hello, I'm Richa!</h1>
+            <br>
+            <div style="font-size:28px">
+                <!--  <strong>OBJECTIVE: </strong>-->
+                Seeking a challenging internship/Full time position with Organization where my strong analytical and problem solving skills
+                will be utilized.Hardworking Individual with excellent experience in Websites Design. Also an Excellent communicator
+                with a strong work ethic who takes ownership of all duties and responsibilities.
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="richa"> My Skills </div>
+        <h4>Computer Language Skills</h4>
+
+        <div class="animated">
+            <button class="btn button1"> HTML 5
+            </button>
+            <button class="btn button1"> CSS 3
+            </button>
+            <button class="btn button1"> JAVA SCRIPT
+            </button>
+            <button class="btn button1"> BOOTSTRAP
+            </button>
+            <button class="btn button1"> JQUERY
+            </button>
+            <button class="btn button1"> ANGULAR 5
+            </button>
+        </div>
+        <br>
+        <h4>Other Skills</h4>
+        <div class="animated">
+            <button class="btn button1"> MS Office
+            </button>
+            <button class="btn button1"> VS Code
+            </button>
+            <button class="btn button1"> GitHub
+            </button>
+            <button class="btn button1"> Windows
+            </button>
+            <button class="btn button1"> Mac
+            </button>
+        </div>
+
+    </section>
+
+    <section id="education">
+        <div class="richa">Education</div>
+        <div class="animated">
+            <h4>Bachelor Of Engineering </h4>
+            <strong>Major:</strong> Electronics and Communications Engineering July 2014
+            <br>Gujarat Technological University
+        </div>
+
+        <div style="padding-top:30px" class="animated">
+            <h4> Technical Certificate </h4>
+            <strong>Major:</strong> Fast Track Programming (Aug 2018 Present)
+            <br>Sinclair Community College 444 West Third Street Dayton, Ohio 45402
+        </div>
+
+        <div style="padding-top:30px" class="animated">
+            <h4>Quallifications</h4>
+            <button class="button button2">
+                <ul>
+                    <li>Excellent written and oral communication </li>
+                    <li>Time management and prioritization skills</li>
+                    <li>Technical analytical, debugging and problem-solving skills Solid organizational</li>
+                    <li>Hard worker who is eager to learn new technologies and apply education</li>
+                </ul>
+            </button>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="richa">My projects</div>
+        <h4>TODO Angular App:</h4>
+        <div>
+            <strong>Environment: </strong>Angular 2, Bootstrap</div>
+        <div class="animated">
+            Developing a proof of concept TODO app with Angular2. Basic CRUD application with Angular CLI where User can create, update,
+            view and delete the TODO. Data is stored in the local storage of browser. Angular router is used for navigating
+            between pages.
+        </div>
+        <br>
+        <h4>POS System:</h4>
+        <div>
+            <strong>Environment: </strong>Angular 5, Bootstrap</div>
+        <div class="animated">
+            Simple point of sale system where user can keep track of inventory items. Each item’s price, description and code can be
+            updated/viewed. Pages are created in Angular with router and mock service where data is stored as json.
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="richa">Work Histroy</div>
+        <ul class="animated">
+            <strong>Hems & Hub Design World, Ahmedabad, India.(2014-2015)</strong>
+            <li> Maintaining the questions list for online testing system. Duties varied from data entry, CSS design and basic
+                html forms generation.
+            </li>
+
+        </ul>
+
+        <ul class="animated">
+            <strong>Kohl's Beavercreek, OH 45324 ( July 2018 - Present)</strong>
+            <li> Working as a position of Retail Sales Associate.Delivers the highest level of customer service through effective
+                problem solving.Solicits, opens and activates Kohl’s Charge applications and loyalty programs</li>
+
+        </ul>
+    </section>
+
+    <section id="contacts">
+        <div class="richa">Contact Me</div>
+        <div class="animated">
+            <button class="button button2">
+                <div> Fairborn,OH-45324</div>
+                <div>
+                    <strong>Email : </strong>richa2593@yahoo.com </div>
+                <div>
+                    <strong>Phone No : </strong>478-697-8856</div>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <a href="#" class="fa fa-facebook"> </a>
+        <a href="#" class="fa fa-linkedin"> </a>
+        <a href="#" class="fa fa-yahoo"> </a>
+        <a href="#" class="fa fa-google"></a>
+    </section>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+<script src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script src="https://ianlunn.co.uk/plugins/jquery-parallax/scripts/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script>
+    window.sr = ScrollReveal({ reset: true, origin: 'top', duration: 1000 });
+    sr.reveal('.animated');
+
+    $('.navbar').localScroll(800);
+    //  jQuery('#aboutme').parallax("50%", 0.1);
+    $('#aboutme').parallax("50%", 0.1);
+
+</script>
+
+</html>
